@@ -1,0 +1,114 @@
+<html>
+<head>
+
+	 <script>
+        function displayPosition(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(function(position){
+                    var positionInfo = "your current position is (" + "lattitude: "+ position.coords.latitude +","
+                    + "longitude: "+ position.coords.longitude +")";
+                    document.getElementById("result").innerHTML = positionInfo;
+                });
+            }else{
+                alert("sorry, no support for GeoLocation")
+            }
+        }
+    </script>
+
+	<style>
+		.seclass2{
+    background-image: url('deprophotoo.jpg');
+    height: 160%;
+    background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+.mydc{
+    background-color: rgb(126, 140, 243);
+    height: 80%;
+    width: 40%;
+    justify-content: center;
+    margin-left: 30%;
+}
+.icls2{
+    width: 40%;
+    height: 30%;
+    justify-content: center;
+    margin-left: 30%;
+
+}
+.input {
+    display: flex;
+    margin: 40%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    color: #555;
+    box-sizing: border-box;
+    font-family: 'Arvo';
+    font-size: 18px;
+    height: 50px;
+    left: 50%;
+    margin: -25px 0 0 -100px;
+    padding: 10px 0px;
+    position: relative;
+    margin-top: 5%;
+    width: 200px;
+}
+.underline {
+    margin: 40%;
+    display: flex;
+    background-color: dodgerblue;
+    display: inline-block;
+    height: 2px;
+    left: 50px;
+    margin-top: -4px;
+    position: absolute;
+    top: 185px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    width: 400%;
+  } 
+.bbtn{
+      background-color: blue;
+      margin-left: 30%;
+      width: 30%;
+  }
+
+
+
+	</style>
+</head>
+<body>
+<form>
+<section class="seclass2">
+
+            <div class="mydc">
+                <img class="icls2" src="deprophoto.png" />
+                <br />
+            
+                        <input class="input" placeholder="Email" type="text" >
+            <span class="underline"></span>
+            <br />
+            <input class="input" placeholder="Password" type="text" >
+            <span class="underline"></span>
+            <br />
+
+				<center>
+             <button type="button" onclick="displayPosition();"><b>click here to confirm your location</b>
+            	</button>
+           	<center />
+				<p> </p>
+
+				<a href="second.html">
+            <button class="bbtn" type = "button">Login</button>
+				</a>
+            </div>
+            
+        </section>
+			</form>
+        </body>
+    
+</html>
