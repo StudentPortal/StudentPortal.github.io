@@ -1,0 +1,58 @@
+.secclass{
+    background-image: linear-gradient(180deg, black ,purple);
+	
+}
+
+.bdiv{
+    background: black;
+    width: 200px;
+}
+.icls{
+    width: 100%;
+    height: 39%;
+}
+.hcls{
+    color: white;
+}
+.b2{
+	font-size: 12px;
+    display: flex;
+    margin: 10px;
+    width: 150px;
+    height: 35px;
+    border-radius: grey;
+    justify-content: center;
+    background-color: grey;
+    
+    
+}
+.seclass2{
+    background-image: url('deprophotoo.jpg');
+    height: 160%;
+    background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+  .b3{
+    width: 150px;
+    height: 40px;
+    border-radius: grey;
+    justify-content: center;
+    margin-left: 30%;
+    background-color: blue;
+  } 
+  .h3c{
+      background-color: aliceblue;
+  }
+  .cirhead{
+      margin-left: 35%;
+      color: red;
+  }
+  .cira{
+      margin-left: 45%;
+      color: blue;
+  }
+  .mytable{
+      margin-left: 25%;
+  }
